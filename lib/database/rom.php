@@ -39,7 +39,7 @@ function getHashListByGameID($gameID)
     }
 
     $query = "
-    SELECT MD5 AS hash
+    SELECT MD5 AS hash, Filename
     FROM GameHashLibrary
     WHERE GameID = $gameID";
 
